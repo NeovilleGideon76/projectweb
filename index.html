@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>kalkulator</title>
+    <link rel="stylesheet" href="\Tugas UTS - Web Kalkulator Sederhana - HTML CSS JS\Tugas UTS - Web Kalkulator Sederhana - HTML CSS JS\assets\styles">
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron">
+            <h1>Simple Kalkulator</h1>
+        </div>
+    </header>
+    <main>
+        <div id="content">
+            <div class="flex-container-column card">
+                <div class="display">
+                    <h1 id="displayNumber">0</h1>
+                </div>
+                <div class="flex-container-row">
+                    <div class="button">7</div>
+                    <div class="button">8</div>
+                    <div class="button">9</div>
+                    <div class="button negative">+/-</div>
+                </div>
+                <div class="flex-container-row">
+                    <div class="button">4</div>
+                    <div class="button">5</div>
+                    <div class="button">6</div>
+                    <div class="button operator">-</div>
+                </div>
+                <div class="flex-container-row">
+                    <div class="button">1</div>
+                    <div class="button">2</div>
+                    <div class="button">3</div>
+                    <div class="button operator">+</div>
+                </div>
+                <div class="flex-container-row">
+                    <div class="button clear">CE</div>
+                    <div class="button">0</div>
+                    <div class="button equals double">=</div>
+                </div>
+            </div>
+            <div class="history card">
+                <h2>Riwayat Perhitungan</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Angka Pertama</th>
+                            <th>Operator</th>
+                            <th>Angka Kedua</th>
+                            <th>Hasil</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyList"></tbody>
+                </table>
+            </div>
+            <script src="storage.js"></script>
+            <script src="kalkulator.js"></script>
+        </div>
+
+        <aside>
+            <article class="profile card" id="cen">
+                <header>
+                    <h2>Kelompok </h2>
+                    <p id="indent">Nama : Neoville Gideon Tajujung</p>
+                    <p id="indent">Nim : 210211060141</p>
+                    <hr>
+                    <p id="indent">Nama : Anugrah S. R. Putong</p>
+                    <p id="indent">Nim : 210211060303</p>
+                    <hr>
+                    <p id="indent">Nama : Greatly Saroinsong</p>
+                    <p id="indent">Nim : 210211060208</p>
+                    <hr>
+                    <p id="indent"><a href="https://drive.google.com/drive/folders/1U8sAbMcw2wD7m-EjqTSmXO6SghOe3KCP">Link Video Demo</a></p>
+                    <hr>
+                    <p id="indent"><a href="/login.php">Fitur Login</a></p>
+                    <hr>
+
+                </header>
+            </article>
+        </aside>
+    </main>
+    <footer>
+        <p id="clr">Website Kalkulator</p>
+    </footer>
+</body>
+
+</html>
